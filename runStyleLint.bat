@@ -1,0 +1,1 @@
+npx stylelint "**/*.{css,scss}"
