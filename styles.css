@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-image: url("./assets/header-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: center;
+}
+
+.toolbar {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.socialMedia a {
+  text-decoration: none;
+}
+
+.toolbar ul a {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.myLogo {
+  font-weight: 700;
+  color: #6070ff;
+  font-size: 18px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  justify-items: center;
+}
+
+.headline h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #091e42;
+  margin: 0;
+}
+
+.mainText {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+}
+
+.socialMedia h2 {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.socialMedia img {
+  margin-right: 10px;
+}
+
+.socialMedia ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.socialMedia img:hover {
+  background-color: #6070ff;
+}
