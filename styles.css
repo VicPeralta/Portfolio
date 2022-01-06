@@ -72,6 +72,13 @@ body {
   margin-right: 10px;
 }
 
+.socialMedia ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
 .socialMedia img:hover {
   background-color: #6070ff;
 }
