@@ -24,6 +24,12 @@ body {
   display: flex;
 }
 
+.toolbar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #6070ff;
+}
+
 .socialMedia a {
   text-decoration: none;
 }
@@ -33,6 +39,13 @@ body {
   font-size: 15px;
   margin: 10px;
   text-decoration: none;
+}
+
+.toolbar button {
+  background-color: inherit;
+  border: none;
+  color: #6070ff;
+  font-size: 38px;
 }
 
 .myLogo {
@@ -80,5 +93,10 @@ body {
 }
 
 .socialMedia img:hover {
+  background-color: #6070ff;
+}
+
+button:hover {
+  color: #fff;
   background-color: #6070ff;
 }
