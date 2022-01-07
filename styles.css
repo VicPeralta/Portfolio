@@ -222,8 +222,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 95%;
-  margin: auto;
-  margin-bottom: 50px;
+  margin: 50px auto;
   justify-items: center;
   background-image: url("./assets/BaseAboutMySelf.png");
   background-repeat: no-repeat;
@@ -241,6 +240,7 @@ button:hover {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding-right: 40px;
 }
 
@@ -273,6 +273,7 @@ button:hover {
 .frameworks li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 10px 0;
   padding-bottom: 10px;
   padding-right: 40px;
@@ -283,4 +284,13 @@ button:hover {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+}
+
+.arrow-right {
+  font-size: 26px;
+}
+
+.arrow-down {
+  font-size: 26px;
+  transform: rotate(90deg);
 }
