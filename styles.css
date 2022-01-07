@@ -62,10 +62,12 @@ body {
   background-size: cover;
 }
 
-.headline h1 {
+.headline h1,
+.about-me h1 {
   font-weight: 700;
   font-size: 40px;
   color: #091e42;
+  line-height: 52px;
   margin: 0;
 }
 
@@ -92,6 +94,12 @@ body {
   list-style: none;
 }
 
+.work-card img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
 .socialMedia img:hover {
   background-color: #6070ff;
 }
@@ -103,8 +111,8 @@ button:hover {
 
 .works-container {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
   grid-row-gap: 90px;
 }
 
@@ -117,26 +125,24 @@ button:hover {
   margin: 0 12px;
 }
 
-.card-1{
+.card-1 {
   grid-column: 1;
   grid-row: 1;
 }
-.card-2{
+
+.card-2 {
   grid-column: 1;
   grid-row: 2;
 }
-.card-3{
+
+.card-3 {
   grid-column: 1;
   grid-row: 3;
 }
-.card-4{
+
+.card-4 {
   grid-column: 1;
   grid-row: 4;
-}
-.work-card img {
-  width: 100%;
-  height: auto;
-  margin: auto;
 }
 
 .highlights {
@@ -167,7 +173,7 @@ button:hover {
 
 .project-name {
   font-weight: 600;
-  font-size: 13;
+  font-size: 13px;
   color: #344563;
   margin-top: 0;
   margin-bottom: 10px;
@@ -192,7 +198,6 @@ button:hover {
 }
 
 .work-text {
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -200,7 +205,6 @@ button:hover {
 }
 
 .work-button {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -211,4 +215,72 @@ button:hover {
   border: 1px solid #6070ff;
   width: 50%;
   padding: 12px;
+  margin-top: 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 50px;
+  justify-items: center;
+  background-image: url("./assets/BaseAboutMySelf.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.languages-option {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+.languages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.languages-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.frameworks {
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.frameworks ul {
+  margin: 0;
+}
+
+.frameworks li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  border-bottom: 1px solid #dfe1e6;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
 }
