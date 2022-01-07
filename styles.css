@@ -10,7 +10,9 @@ body {
 
 .toolbar {
   display: flex;
-  margin: 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -53,13 +55,17 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  width: 95%;
   margin: auto;
   margin-bottom: 50px;
   justify-items: center;
   background-image: url("./assets/header-shapes-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: 150% 100%;
+}
+
+.intro {
+  margin: 70px 10px;
 }
 
 .headline h1,
@@ -152,6 +158,7 @@ button:hover {
 
 .highlights ul {
   display: flex;
+  margin: 0;
 }
 
 .highlights li {
@@ -226,7 +233,8 @@ button:hover {
   justify-items: center;
   background-image: url("./assets/BaseAboutMySelf.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-color: rgb(245, 245, 245);
 }
 
 .languages {
@@ -268,6 +276,7 @@ button:hover {
 
 .frameworks ul {
   margin: 0;
+  padding: 0;
 }
 
 .frameworks li {
@@ -286,11 +295,12 @@ button:hover {
   text-align: left;
 }
 
-.arrow-right {
-  font-size: 26px;
+.arrow-down {
+  transform: rotate(90deg);
 }
 
-.arrow-down {
-  font-size: 26px;
-  transform: rotate(90deg);
+.arrow-button {
+  font-size: 20px;
+  background-color: white;
+  border: none;
 }
