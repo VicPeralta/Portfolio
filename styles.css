@@ -6,10 +6,6 @@
 
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background-image: url("./assets/header-shapes-mobile.svg");
-  background-repeat: no-repeat;
-  background-origin: padding-box;
-  background-position: center;
 }
 
 .toolbar {
@@ -59,7 +55,11 @@ body {
   flex-direction: column;
   width: 95%;
   margin: auto;
+  margin-bottom: 50px;
   justify-items: center;
+  background-image: url("./assets/header-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headline h1 {
@@ -99,4 +99,116 @@ body {
 button:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+  grid-row-gap: 90px;
+}
+
+.work-card {
+  border: 1px solid #dfe1e6;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 0 12px;
+}
+
+.card-1{
+  grid-column: 1;
+  grid-row: 1;
+}
+.card-2{
+  grid-column: 1;
+  grid-row: 2;
+}
+.card-3{
+  grid-column: 1;
+  grid-row: 3;
+}
+.card-4{
+  grid-column: 1;
+  grid-row: 4;
+}
+.work-card img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.highlights {
+  display: flex;
+  align-items: baseline;
+}
+
+.highlights ul {
+  display: flex;
+}
+
+.highlights li {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.project-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 13;
+  color: #344563;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.work-lenguages ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.work-lenguages li {
+  background-color: #ebebff;
+  color: #6070ff;
+  margin-right: 8px;
+  margin-left: 0;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.work-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.work-button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  width: 50%;
+  padding: 12px;
 }
