@@ -39,11 +39,20 @@ body {
   text-decoration: none;
 }
 
-.toolbar button {
+.hamburger-button {
   background-color: inherit;
   border: none;
   color: #6070ff;
   font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.hamburger-button:hover {
+  background-color: #6070ff;
+  border: none;
+  color: #fff;
 }
 
 .myLogo {
@@ -330,4 +339,88 @@ body {
   background-color: #fff;
   color: #5e6c84;
   border: 1px solid #5e6c84;
+}
+
+.contact-section {
+  background-image: url("./assets/contactformshapes-mobile.svg"), url("./assets/Contactme.png");
+  background-repeat: no-repeat;
+  background-size: 130% 100%;
+  background-blend-mode: lighten;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section h3 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.contact-section form {
+  width: 90%;
+}
+
+.contact-section p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.contact-section textarea {
+  width: 100%;
+  height: 10rem;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 20px 10px;
+}
+
+.input-field-contact {
+  width: 100%;
+  height: 2rem;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 30px 10px;
+}
+
+.button-contact-form {
+  color: #6070ff;
+}
+
+.contact-section_lining {
+  background: rgba(13, 21, 30, 1);
+  height: 5px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-bottom: 10px;
 }
