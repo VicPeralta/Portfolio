@@ -39,11 +39,20 @@ body {
   text-decoration: none;
 }
 
-.toolbar button {
+.hamburger-button {
   background-color: inherit;
   border: none;
   color: #6070ff;
   font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.hamburger-button:hover {
+  background-color: #6070ff;
+  border: none;
+  color: #fff;
 }
 
 .myLogo {
@@ -333,9 +342,9 @@ body {
 }
 
 .contact-section {
-  background-image: url("./assets/contact\ form\ shapes-mobile.svg"), url("./assets/Contactme.png");
+  background-image: url("./assets/contactformshapes-mobile.svg"), url("./assets/Contactme.png");
   background-repeat: no-repeat;
-  background-size: 150% 100%;
+  background-size: 130% 100%;
   background-blend-mode: lighten;
   display: flex;
   flex-direction: column;
@@ -343,12 +352,12 @@ body {
 }
 
 .contact-section h3 {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #fff;
   margin-top: 90px;
@@ -358,29 +367,32 @@ body {
 .contact-section form {
   width: 90%;
 }
+
 .contact-section p {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   padding: 10px;
   color: #fff;
   margin-top: 10px;
 }
+
 .contact-section textarea {
   width: 100%;
   height: 10rem;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
+
 .input-field-contact {
   width: 100%;
   height: 2rem;
@@ -392,9 +404,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .button-contact-form {
@@ -404,10 +415,10 @@ body {
 .contact-section_lining {
   background: rgba(13, 21, 30, 1);
   height: 5px;
-width: 134px;
-left: 120px;
-top: 21px;
-border-radius: 10px;
-margin-top: 24px;
-margin-bottom: 10px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-bottom: 10px;
 }
