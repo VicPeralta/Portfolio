@@ -6,7 +6,8 @@
 
 ![screenshot](./app_screenshot.png)
 
-It is still a working project
+It is still a working project but you can watch a live demo here:
+https://vicperalta.github.io/Portfolio/
 
 ## Built With
 
