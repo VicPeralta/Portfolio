@@ -16,6 +16,7 @@ body {
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .toolbar {
@@ -439,13 +440,16 @@ body {
   margin-bottom: 10px;
 }
 
+  
 @media screen and (min-width:992px) {
   .hamburger-button{
     display: none;
   }
+
   .toolbar ul{
     display: flex;
   }
+
   .intro-section{
     background-image: url("./assets/desktop/header-background.png"), url("./assets/desktop/Headerbg@2x.png");
     background-repeat: no-repeat, no-repeat;
@@ -454,9 +458,43 @@ body {
     background-blend-mode: darken;  
     height: 100vh;
   }
+
   .headline{
     width: 70%;
     margin: auto;
   }
 }
+
+@media screen and (min-width:992px)  {
+  .contact-section {
+    background-image: url("./assets/desktop/contact-background.png"), url("./assets/desktop/contact-shapes.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: left, 50px 70px;
+    background-size: 100% 100%, 90% 90%;
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
   
+  .contact-section form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section_lining {
+    display: none;
+  }
+  
+  .contact-section p{
+    width:40%;
+  }
+
+  .button-contact-form {
+    color: #6070ff;
+    width: 140px;
+  }
+}
+
