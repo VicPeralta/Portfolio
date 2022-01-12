@@ -8,6 +8,14 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+.intro-section {
+  background-image: url("./assets/mobile/header-background.png"), url("./assets/mobile/header-shapes.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, 0 50px;
+  background-size: cover, 100% 94%;
+  background-blend-mode: darken;
+}
+
 .toolbar {
   display: flex;
   margin-left: 20px;
@@ -67,10 +75,6 @@ body {
   margin: auto;
   margin-bottom: 50px;
   justify-items: center;
-  background-image: url("./assets/header-shapes-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150% 100%;
 }
 
 .intro {
@@ -84,6 +88,8 @@ body {
   color: #091e42;
   line-height: 52px;
   margin: 0;
+  margin-top: 30px;
+  width: 80%;
 }
 
 .mainText {
@@ -251,10 +257,10 @@ body {
   width: 95%;
   margin: 50px auto;
   justify-items: center;
-  background-image: url("./assets/BaseAboutMySelf.png");
+  background-image: url("./assets/mobile/about-me-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(245, 245, 245);
+  background-color: #f7f7f9;
 }
 
 .languages {
@@ -342,9 +348,10 @@ body {
 }
 
 .contact-section {
-  background-image: url("./assets/contactformshapes-mobile.svg"), url("./assets/Contactme.png");
-  background-repeat: no-repeat;
-  background-size: 130% 100%;
+  background-image: url("./assets/mobile/contact-me-background.png"), url("./assets/mobile/contact-me-shapes.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: left, 140px 20px;
+  background-size: cover, 60% 92%;
   background-blend-mode: lighten;
   display: flex;
   flex-direction: column;
@@ -360,7 +367,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
-  margin-top: 90px;
+  margin-top: 103px;
   margin-bottom: 0;
 }
 
