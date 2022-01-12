@@ -561,7 +561,29 @@ body {
   .socialMedia ul li{
     margin-right:21px;
   }
+
   .work-button{
     width: 180px;
   }
 }
+
+@media screen and (min-width:992px)  {
+  .work-card{
+    flex-direction: row;
+  }
+
+  .work-card img{
+    width: 550px;
+    height: auto;
+    margin-right: 40px;
+  }
+  .work-info{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .even-row{
+    flex-direction: row-reverse;
+  }
+}
+
