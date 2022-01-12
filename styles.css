@@ -271,19 +271,44 @@ body {
   background-color: #f7f7f9;
 }
 
-.languages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-
 .languages-option {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding-right: 40px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+
+.lenguage-card{
+  display: flex;
+  width: 100%;
+  background-color: #F7F7F9;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 9px;
+  margin-bottom: 10px;
+}
+
+.lenguage-card img{
+  width: 48px;
+  height: auto;
+  margin-right: 16px;
+}
+.lenguage-card p{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .languages ul {
@@ -498,3 +523,45 @@ body {
   }
 }
 
+@media screen and (min-width:992px)  {
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+    justify-items: flex-start;
+    background-image: url("./assets/mobile/about-me-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #f7f7f9;
+    height: 100vh;
+  }
+
+  .about-intro{
+    width: 35%;
+    margin-right: 30px;
+  }
+
+  .about-technologies{
+    width: 60%;
+  }
+
+  .languages {
+    flex-direction: row;
+  }
+  
+  .lenguage-card{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    margin-right: 12px;
+  }
+
+  .socialMedia ul li{
+    margin-right:21px;
+  }
+  .work-button{
+    width: 180px;
+  }
+}
