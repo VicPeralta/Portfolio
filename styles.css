@@ -588,6 +588,25 @@ body {
     margin: 20px;
   }
 
+  .work-card img:hover {
+    transform: scale(1.1);
+  }
+
+  .myLogo {
+    animation-duration: 2s;
+    animation-name: rotate;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .work-info {
     display: flex;
     flex-direction: column;
