@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
- }
+}
 
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -467,9 +467,9 @@ body {
   margin-top: 24px;
   margin-bottom: 10px;
 }
+
 /*
   Apply this styling for all screens wider than 641px
-  
 */
 @media screen and (min-width: 641px) {
   .intro-section {
@@ -626,15 +626,16 @@ body {
   Apply this styling to just tablet (641px-995px)
 */
 @media screen and (min-width: 641px) and (max-width: 995px) {
-   .intro h1{
+  .intro h1 {
     color: #091e42c9;
   }
 }
+
 /*
   Apply this styling to tablet's landscape and standard monitors
 */
 @media screen and (min-width: 996px) and (max-width: 1100px) {
-  .intro h1{
+  .intro h1 {
     color: #091e42e5;
   }
 }
@@ -643,7 +644,7 @@ body {
   Apply this for wide screen
 */
 @media screen and (min-width: 1101px) {
-  .intro h1{
+  .intro h1 {
     color: #091e42f1;
   }
 }
