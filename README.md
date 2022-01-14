@@ -3,8 +3,14 @@
 # My Portfolio
 
 > This is my Portfolio project
+## Mobile
+<img src="./mobile-phone.png" width="50%" height="auto"/>
 
-![screenshot](./app_screenshot.png)
+## Tablet
+<img src="./tablet.png" width="70%" height="auto"/>
+
+## Widescreen
+<img src="./widescreen.png" width="100%" height="auto"/>
 
 It is still a working project but you can watch a live demo here:
 https://vicperalta.github.io/Portfolio/
@@ -21,7 +27,8 @@ https://vicperalta.github.io/Portfolio/
 - GitHub: [@githubhandle](https://github.com/VicPeralta)
 - Twitter: [@twitterhandle](https://twitter.com/VicPeralta)
 
-
+👤 **Have-Samuel**
+- GitHub: [@githubhandle](https://github.com/Have-Samuel)
 ## Show your support
 
 Give a ⭐️ if you like this project!
