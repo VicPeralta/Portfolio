@@ -8,7 +8,12 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.intro-section {
+:root {
+  --new-work-li-color-hi: #6c7687;
+  --new-work-li-color-lan: #505edb;
+}
+
+.welcome-section {
   background-image: url("./assets/mobile/header-background.png"), url("./assets/mobile/header-shapes.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left, 0 50px;
@@ -16,6 +21,7 @@ body {
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-bottom: 60px;
 }
 
@@ -57,7 +63,7 @@ body {
 }
 
 .hamburger-button {
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   color: #6070ff;
   font-size: 38px;
@@ -112,15 +118,15 @@ body {
   font-size: 16px;
 }
 
-.socialMedia img {
-  margin-right: 10px;
-}
-
 .socialMedia ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
+}
+
+.socialMedia img {
+  margin-right: 10px;
 }
 
 .work-card img {
@@ -178,7 +184,7 @@ body {
 .highlights li {
   font-weight: 600;
   font-size: 13px;
-  color: #7a869a;
+  color: var(--new-work-li-color-hi);
   margin-left: 0;
   margin-right: 25px;
 }
@@ -208,7 +214,7 @@ body {
 
 .work-lenguages li {
   background-color: #ebebff;
-  color: #6070ff;
+  color: var(--new-work-li-color-lan);
   margin-right: 8px;
   margin-left: 0;
   padding: 4px 12px;
@@ -218,7 +224,7 @@ body {
   line-height: 16px;
 }
 
-.work-text {
+.work-info p {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -258,6 +264,7 @@ body {
 .about-me {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 95%;
   margin: 50px auto;
   justify-items: center;
@@ -265,6 +272,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f7f7f9;
+}
+
+.about-technologies {
+  width: 100%;
 }
 
 .languages-option {
@@ -299,7 +310,7 @@ body {
 }
 
 .socialMedia img:hover {
-  background-color: #6070ff;
+  transform: scale(2.2);
 }
 
 .lenguage-card p {
@@ -355,6 +366,11 @@ body {
   text-align: left;
 }
 
+.socialMedia ul li {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
 .arrow-down {
   transform: rotate(90deg);
 }
@@ -381,7 +397,7 @@ body {
   border: 1px solid #5e6c84;
 }
 
-.contact-section {
+.contact-me {
   background-image: url("./assets/mobile/contact-me-background.png"), url("./assets/mobile/contact-me-shapes.png");
   background-repeat: no-repeat no-repeat;
   background-position: left, 140px 20px;
@@ -392,7 +408,7 @@ body {
   align-items: center;
 }
 
-.contact-section h3 {
+.contact-me h3 {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -405,13 +421,13 @@ body {
   margin-bottom: 0;
 }
 
-.contact-section form {
+.contact-me form {
   width: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.contact-section p {
+.contact-me p {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -424,7 +440,7 @@ body {
   margin-top: 10px;
 }
 
-.contact-section textarea {
+.contact-me textarea {
   width: 100%;
   height: 10rem;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -453,11 +469,7 @@ body {
   padding: 30px 10px;
 }
 
-.button-contact-form {
-  color: #6070ff;
-}
-
-.contact-section_lining {
+.contact-me hr {
   background: rgba(13, 21, 30, 1);
   height: 5px;
   width: 134px;
@@ -472,7 +484,7 @@ body {
   Apply this styling for all screens wider than 641px
 */
 @media screen and (min-width: 641px) {
-  .intro-section {
+  .welcome-section {
     background-image: url("./assets/desktop/header-background.png"), url("./assets/desktop/Headerbg@2x.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left, 0 50px;
@@ -505,7 +517,11 @@ body {
     color: #fff;
   }
 
-  .contact-section {
+  .socialMedia ul li {
+    margin-right: 21px;
+  }
+
+  .contact-me {
     background-image: url("./assets/desktop/contact-background.png"), url("./assets/desktop/contact-shapes.png");
     background-repeat: no-repeat no-repeat;
     background-position: left, 50px 70px;
@@ -513,11 +529,11 @@ body {
     background-blend-mode: lighten;
   }
 
-  .contact-section_lining {
+  .contact-me hr {
     display: none;
   }
 
-  .contact-section form {
+  .contact-me form {
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -525,7 +541,7 @@ body {
     margin-bottom: 50px;
   }
 
-  .contact-section p {
+  .contact-me p {
     width: 40%;
   }
 
@@ -562,10 +578,6 @@ body {
     align-items: flex-start;
     width: 120px;
     margin-right: 12px;
-  }
-
-  .socialMedia ul li {
-    margin-right: 21px;
   }
 
   .work-button {
