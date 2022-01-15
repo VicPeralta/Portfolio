@@ -12,7 +12,7 @@
 ## Widescreen
 <img src="./widescreen.png" width="100%" height="auto"/>
 
-It is still a working project but you can watch a live demo here:
+It is still a working project but you can watch a live demo here:  
 https://vicperalta.github.io/Portfolio/
 
 ## Built With
@@ -24,11 +24,11 @@ https://vicperalta.github.io/Portfolio/
 
 👤 **Victor Peralta**
 
-- GitHub: [@githubhandle](https://github.com/VicPeralta)
-- Twitter: [@twitterhandle](https://twitter.com/VicPeralta)
+- GitHub: [@VicPeralta](https://github.com/VicPeralta)
+- Twitter: [@VicPeralta](https://twitter.com/VicPeralta)
 
 👤 **Have-Samuel**
-- GitHub: [@githubhandle](https://github.com/Have-Samuel)
+- GitHub: [@Have-Samuel](https://github.com/Have-Samuel)
 ## Show your support
 
 Give a ⭐️ if you like this project!
