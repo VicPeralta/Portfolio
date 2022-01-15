@@ -21,6 +21,7 @@ body {
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-bottom: 60px;
 }
 
@@ -117,15 +118,15 @@ body {
   font-size: 16px;
 }
 
-.socialMedia img {
-  margin-right: 10px;
-}
-
 .socialMedia ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
+}
+
+.socialMedia img {
+  margin-right: 10px;
 }
 
 .work-card img {
@@ -263,6 +264,7 @@ body {
 .about-me {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 95%;
   margin: 50px auto;
   justify-items: center;
@@ -270,6 +272,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f7f7f9;
+}
+
+.about-technologies {
+  width: 100%;
 }
 
 .languages-option {
@@ -358,6 +364,11 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+}
+
+.socialMedia ul li {
+  margin-left: 0;
+  margin-right: 6px;
 }
 
 .arrow-down {
@@ -506,6 +517,10 @@ body {
     color: #fff;
   }
 
+  .socialMedia ul li {
+    margin-right: 21px;
+  }
+
   .contact-me {
     background-image: url("./assets/desktop/contact-background.png"), url("./assets/desktop/contact-shapes.png");
     background-repeat: no-repeat no-repeat;
@@ -563,10 +578,6 @@ body {
     align-items: flex-start;
     width: 120px;
     margin-right: 12px;
-  }
-
-  .socialMedia ul li {
-    margin-right: 21px;
   }
 
   .work-button {
