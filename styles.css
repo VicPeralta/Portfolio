@@ -8,6 +8,11 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --new-work-li-color-hi: #6c7687;
+  --new-work-li-color-lan: #505edb;
+}
+
 .welcome-section {
   background-image: url("./assets/mobile/header-background.png"), url("./assets/mobile/header-shapes.png");
   background-repeat: no-repeat, no-repeat;
@@ -178,7 +183,7 @@ body {
 .highlights li {
   font-weight: 600;
   font-size: 13px;
-  color: #7a869a;
+  color: var(--new-work-li-color-hi);
   margin-left: 0;
   margin-right: 25px;
 }
@@ -208,7 +213,7 @@ body {
 
 .work-lenguages li {
   background-color: #ebebff;
-  color: #6070ff;
+  color: var(--new-work-li-color-lan);
   margin-right: 8px;
   margin-left: 0;
   padding: 4px 12px;
@@ -451,10 +456,6 @@ body {
   letter-spacing: 0;
   text-align: left;
   padding: 30px 10px;
-}
-
-.button-contact-form {
-  color: #6070ff;
 }
 
 .contact-me hr {
