@@ -13,7 +13,8 @@
 <img src="./widescreen.png" width="100%" height="auto"/>
 
 It is still a working project but you can watch a live demo here:  
-https://vicperalta.github.io/Portfolio/
+
+[Live demo](https://vicperalta.github.io/Portfolio/)
 
 ## Built With
 
