@@ -97,7 +97,7 @@ body {
 }
 
 .headline h1,
-.about-me h1 {
+.about-me h2 {
   font-weight: 700;
   font-size: 40px;
   color: #091e42;
@@ -250,6 +250,11 @@ body {
   color: #fff;
 }
 
+.work-button:focus {
+  background-color: #6070ff;
+  color: #fff;
+}
+
 .work-button:active {
   background-color: #2230d2;
   color: #fff;
@@ -272,10 +277,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f7f7f9;
-}
-
-.about-intro h2 {
-  font-size: 40px;
 }
 
 .about-technologies {
@@ -314,6 +315,10 @@ body {
 }
 
 .socialMedia img:hover {
+  transform: scale(2.2);
+}
+
+.socialMedia ul > li > a:focus img {
   transform: scale(2.2);
 }
 
@@ -473,6 +478,30 @@ body {
   padding: 30px 10px;
 }
 
+.input-field-contact:focus {
+  background-color: antiquewhite;
+}
+
+.input-field-contact:invalid {
+  border: 2px solid red;
+}
+
+.input-field-contact:valid {
+  border: 3px solid green;
+}
+
+.contact-me textarea:focus {
+  background-color: antiquewhite;
+}
+
+.contact-me textarea:invalid {
+  border: 2px solid red;
+}
+
+.contact-me textarea:valid {
+  border: 2px solid green;
+}
+
 .contact-me hr {
   background: rgba(13, 21, 30, 1);
   height: 5px;
@@ -517,6 +546,11 @@ body {
   }
 
   .toolbar a:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .toolbar a:focus {
     background-color: #6070ff;
     color: #fff;
   }
