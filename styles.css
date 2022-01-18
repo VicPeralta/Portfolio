@@ -274,6 +274,10 @@ body {
   background-color: #f7f7f9;
 }
 
+.about-intro h2 {
+  font-size: 40px;
+}
+
 .about-technologies {
   width: 100%;
 }
