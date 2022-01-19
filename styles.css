@@ -11,6 +11,7 @@ body {
 :root {
   --new-work-li-color-hi: #6c7687;
   --new-work-li-color-lan: #505edb;
+  --new-primary-color: #5464f2;
 }
 
 .welcome-section {
@@ -23,6 +24,7 @@ body {
   flex-direction: column;
   margin: 0;
   margin-bottom: 60px;
+  background-color: #fff;
 }
 
 .toolbar {
@@ -37,6 +39,7 @@ body {
 .toolbar ul {
   list-style: none;
   display: none;
+  background-color: #fff;
 }
 
 .toolbar a {
@@ -48,7 +51,7 @@ body {
   line-height: 20px;
   letter-spacing: 0;
   text-align: center;
-  color: #6070ff;
+  color: #344563;
 }
 
 .socialMedia a {
@@ -65,7 +68,7 @@ body {
 .hamburger-button {
   background-color: transparent;
   border: none;
-  color: #6070ff;
+  color: var(--new-primary-color);
   font-size: 38px;
   font-style: normal;
   font-weight: 500;
@@ -73,14 +76,15 @@ body {
 }
 
 .hamburger-button:hover {
-  background-color: #6070ff;
+  background-color: var(--new-primary-color);
   border: none;
   color: #fff;
 }
 
-.myLogo {
+.myLogo a {
   font-weight: 700;
-  color: #6070ff;
+  color: var(--new-primary-color);
+  background-color: #fff;
   font-size: 18px;
 }
 
@@ -101,6 +105,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: #091e42;
+  background-color: #fff;
   line-height: 52px;
   margin: 0;
   margin-top: 30px;
@@ -110,10 +115,12 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
+  background-color: #fff;
 }
 
 .socialMedia h2 {
-  color: #7f8cff;
+  color: var(--new-primary-color);
+  background-color: #fff;
   font-weight: 500;
   font-size: 16px;
 }
@@ -239,19 +246,19 @@ body {
   color: #396df2;
   background-color: white;
   border-radius: 8px;
-  border: 1px solid #6070ff;
+  border: 1px solid var(--new-primary-color);
   width: 50%;
   padding: 12px;
   margin-top: 20px;
 }
 
 .work-button:hover {
-  background-color: #6070ff;
+  background-color: var(--new-primary-color);
   color: #fff;
 }
 
 .work-button:focus {
-  background-color: #6070ff;
+  background-color: var(--new-primary-color);
   color: #fff;
 }
 
@@ -277,6 +284,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f7f7f9;
+}
+
+.about-me h3 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:var(--new-primary-color);
+  background-color: #fff;
 }
 
 .about-technologies {
@@ -337,12 +356,14 @@ body {
   padding: 0;
 }
 
-.languages-title {
+.languages-option h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0;
+  color:#344563;
+  background-color: #fff;
 }
 
 .frameworks {
@@ -373,6 +394,8 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+  color: #344563;
+  background-color: #fff;
 }
 
 .socialMedia ul li {
@@ -391,7 +414,7 @@ body {
 }
 
 .arrow-button:hover {
-  background-color: #6070ff;
+  background-color: var(--new-primary-color);
   color: #fff;
 }
 
@@ -426,6 +449,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
+  background-color: var(--new-primary-color);
   margin-top: 103px;
   margin-bottom: 0;
 }
@@ -446,6 +470,7 @@ body {
   text-align: center;
   padding: 10px;
   color: #fff;
+  background-color: var(--new-primary-color);
   margin-top: 10px;
 }
 
@@ -546,12 +571,12 @@ body {
   }
 
   .toolbar a:hover {
-    background-color: #6070ff;
+    background-color: var(--new-primary-color);
     color: #fff;
   }
 
   .toolbar a:focus {
-    background-color: #6070ff;
+    background-color: var(--new-primary-color);
     color: #fff;
   }
 
@@ -584,7 +609,7 @@ body {
   }
 
   .button-contact-form {
-    color: #6070ff;
+    color: #5664e5;
     width: 140px;
   }
 
