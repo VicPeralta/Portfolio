@@ -58,6 +58,13 @@ body {
   text-decoration: none;
 }
 
+.myLogo a {
+  font-weight: 700;
+  color: var(--new-primary-color);
+  background-color: #fff;
+  font-size: 18px;
+}
+
 .toolbar ul a {
   font-weight: 500;
   font-size: 15px;
@@ -79,13 +86,6 @@ body {
   background-color: var(--new-primary-color);
   border: none;
   color: #fff;
-}
-
-.myLogo a {
-  font-weight: 700;
-  color: var(--new-primary-color);
-  background-color: #fff;
-  font-size: 18px;
 }
 
 .headline {
@@ -292,9 +292,9 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color:var(--new-primary-color);
+  color: var(--new-primary-color);
   background-color: #fff;
 }
 
@@ -362,7 +362,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0;
-  color:#344563;
+  color: #344563;
   background-color: #fff;
 }
 
