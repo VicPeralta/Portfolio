@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap");
 
+/*
+  ******************************************************************************
+    General properties
+  ******************************************************************************
+*/
 * {
   box-sizing: border-box;
 }
@@ -12,8 +17,14 @@ body {
   --new-work-li-color-hi: #6c7687;
   --new-work-li-color-lan: #505edb;
   --new-primary-color: #5464f2;
+  --original-primary-color: #6070ff;
 }
 
+/*
+  ******************************************************************************
+    Welcome section properties
+  ******************************************************************************
+*/
 .welcome-section {
   background-image: url("./assets/mobile/header-background.png"), url("./assets/mobile/header-shapes.png");
   background-repeat: no-repeat, no-repeat;
@@ -135,6 +146,12 @@ body {
 .socialMedia img {
   margin-right: 10px;
 }
+
+/*
+  ******************************************************************************
+    Works section properties
+  ******************************************************************************
+*/
 
 .work-card img {
   width: 100%;
@@ -272,6 +289,12 @@ body {
   color: #5e6c84;
   border: 1px solid #5e6c84;
 }
+
+/*
+  ******************************************************************************
+    About-me section properties
+  ******************************************************************************
+*/
 
 .about-me {
   display: flex;
@@ -429,6 +452,12 @@ body {
   border: 1px solid #5e6c84;
 }
 
+/*
+  ******************************************************************************
+    Contact-me section properties
+  ******************************************************************************
+*/
+
 .contact-me {
   background-image: url("./assets/mobile/contact-me-background.png"), url("./assets/mobile/contact-me-shapes.png");
   background-repeat: no-repeat no-repeat;
@@ -449,7 +478,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
-  background-color: var(--new-primary-color);
+  background-color: var(--original-primary-color);
   margin-top: 103px;
   margin-bottom: 0;
 }
@@ -470,7 +499,7 @@ body {
   text-align: center;
   padding: 10px;
   color: #fff;
-  background-color: var(--new-primary-color);
+  background-color: var(--original-primary-color);
   margin-top: 10px;
 }
 
