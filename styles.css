@@ -22,21 +22,9 @@ body {
 
 /*
   ******************************************************************************
-    Welcome section properties
+    Toolbar properties
   ******************************************************************************
 */
-.welcome-section {
-  background-image: url("./assets/mobile/header-background.png"), url("./assets/mobile/header-shapes.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left, 0 50px;
-  background-size: cover, 100% 94%;
-  background-blend-mode: darken;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 60px;
-  background-color: #fff;
-}
 
 .toolbar {
   display: flex;
@@ -47,13 +35,31 @@ body {
   align-items: center;
 }
 
-.toolbar ul {
+.nav-bar ul {
   list-style: none;
   display: none;
   background-color: #fff;
 }
 
-.toolbar a {
+.myLogo a {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  color: var(--new-primary-color);
+  background-color: #fff;
+}
+
+/* This line belongs to Welcome screen, but to fix a linter error it is place here */
+.socialMedia a {
+  text-decoration: none;
+}
+
+.nav-bar ul li a {
   text-decoration: none;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -63,24 +69,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #344563;
-}
-
-.socialMedia a {
-  text-decoration: none;
-}
-
-.myLogo a {
-  font-weight: 700;
-  color: var(--new-primary-color);
-  background-color: #fff;
-  font-size: 18px;
-}
-
-.toolbar ul a {
-  font-weight: 500;
-  font-size: 15px;
   margin: 10px;
-  text-decoration: none;
 }
 
 .hamburger-button {
@@ -91,6 +80,23 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+/*
+  ******************************************************************************
+    Welcome section properties
+  ******************************************************************************
+*/
+.welcome-section {
+  background-image: url("./assets/mobile/header-background.png"), url("./assets/mobile/header-shapes.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, 0 30px;
+  background-size: cover, 100% 88%;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #fff;
 }
 
 .hamburger-button:hover {
@@ -111,15 +117,15 @@ body {
   margin: 70px 10px;
 }
 
-.headline h1,
-.about-me h2 {
+.headline h1 {
   font-weight: 700;
   font-size: 40px;
   color: #091e42;
-  background-color: #fff;
+  background-color: transparent;
   line-height: 52px;
   margin: 0;
   margin-top: 30px;
+  width: 80%;
 }
 
 .mainText {
@@ -307,6 +313,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f7f7f9;
+}
+
+.about-me h2 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .about-me h3 {
@@ -577,7 +594,8 @@ body {
     background-position: left, 0 50px;
     background-size: cover, 100% 94%;
     background-blend-mode: darken;
-    height: 100vh;
+    margin-bottom: 60px;
+    height: 85vh;
   }
 
   .headline {
@@ -646,15 +664,16 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
-    margin: 50px auto;
+    width: 100%;
     justify-items: flex-start;
+    justify-content: center;
     height: 100vh;
   }
 
   .about-intro {
     width: 35%;
     margin-right: 30px;
+    margin-left: 10%;
   }
 
   .about-technologies {
