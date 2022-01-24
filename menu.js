@@ -30,3 +30,11 @@ let closeOption = document.querySelector("#close-btn");
 closeOption.addEventListener('click', e => {
   closeMenu();
 });
+
+document.addEventListener('click', e => {
+if (e.target.matches('.menu-options ul li a')) {
+  let menu = document.querySelector('.menu-options');
+  menu.classList.remove('visible');
+  menu.classList.add('invisible');
+  makeScrollable();
+}});

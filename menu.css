@@ -1,15 +1,14 @@
-
-.menu-options{
-  background-color: rgba(96, 112, 255, .8);
+.menu-options {
+  background-color: rgba(96, 112, 255, 0.8);
   width: 100vw;
   height: 100vh;
   position: absolute;
   backdrop-filter: blur(6px);
-  left:0;
+  left: 0;
   top: 0;
 }
 
-.menu-options button{
+.menu-options button {
   background-color: transparent;
   color: #fff;
   border: none;
@@ -21,18 +20,18 @@
   display: block;
 }
 
-.menu-options ul{
+.menu-options ul {
   list-style: none;
   margin: 0 0 0 20px;
   padding: 0;
 }
 
-.menu-options ul li{
+.menu-options ul li {
   margin-top: 20px;
   margin-right: 40px;
 }
 
-.menu-options ul li a{
+.menu-options ul li a {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -44,21 +43,20 @@
   text-decoration: none;
 }
 
-.makeScrollable{
+.makeScrollable {
   overflow-y: visible;
 }
 
-.makeNotScrollable{
+.makeNotScrollable {
   overflow-y: hidden;
 }
 
-
-.visible{
+.visible {
   display: block;
   z-index: 1;
 }
 
-.invisible{
+.invisible {
   display: none;
   z-index: 1;
 }
@@ -74,7 +72,3 @@
   border-radius: 8px;
   margin-bottom: 20px;
 }
-
-
-
-
