@@ -1,0 +1,80 @@
+
+.menu-options{
+  background-color: rgba(96, 112, 255, .8);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  backdrop-filter: blur(6px);
+  left:0;
+  top: 0;
+}
+
+.menu-options button{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: auto;
+  width: 50px;
+  font-size: 24px;
+  display: block;
+}
+
+.menu-options ul{
+  list-style: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.menu-options ul li{
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.menu-options ul li a{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.makeScrollable{
+  overflow-y: visible;
+}
+
+.makeNotScrollable{
+  overflow-y: hidden;
+}
+
+
+.visible{
+  display: block;
+  z-index: 1;
+}
+
+.invisible{
+  display: none;
+  z-index: 1;
+}
+
+.menu-options hr {
+  color: #000;
+  background-color: black;
+  height: 4px;
+  position: absolute;
+  width: 40%;
+  bottom: 0;
+  left: 30%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+
+
