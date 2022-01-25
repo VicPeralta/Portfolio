@@ -305,8 +305,62 @@ body {
     Project details section properties
   ******************************************************************************
 */
-.detail-header {
 
+.detail-container {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  margin: 10px auto;
+  padding: 18px 16px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-header button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #67798e;
+}
+
+.detail-container img {
+  width: 100%;
+  height: auto;
+}
+
+.detail-container p {
+  width: 100%;
+  height: auto;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.details-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-footer button {
+  width: 49%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.details-footer button img {
+  height: 20px;
+  width: 20px;
+}
+
+.detail-container hr {
+  border: 1px solid #EBECF0;
 }
 
 /*
