@@ -34,5 +34,12 @@ formCtrl.addEventListener('submit', (e) => {
     errorCtrl.textContent = 'Expecting lowercase letters';
     emailCtrl.setCustomValidity('');
     e.preventDefault();
+    return;
+  }
+  // Check if is a valid email address
+  const regEmail = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/g;
+  if (email.search(regEmail) === -1) {
+    errorCtrl.textContent = 'Expecting a valid email address';
+    e.preventDefault();
   }
 });
