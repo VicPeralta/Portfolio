@@ -626,7 +626,7 @@ body {
   flex-direction: column;
 }
 
-.contact-me p {
+.error, .contact-me p {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -702,6 +702,10 @@ body {
   border-radius: 10px;
   margin-top: 24px;
   margin-bottom: 10px;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 /*

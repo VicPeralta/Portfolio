@@ -19,6 +19,7 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
   <script src="./menu.js" defer></script>
   <script src="./script.js" defer></script>
+  <script src="./formValidation.js" defer></script>
   <title>Victor's Portfolio</title>
 </head>
 
@@ -170,14 +171,16 @@
       that you need built or a project that needs coding. I’d love to help
       with it
     </p>
-    <form action="https://formspree.io/f/mwkypgbn" method="post">
+    <!-- <form novalidate action="https://formspree.io/f/mwkypgbn" method="post" id='form'> -->
+      <form novalidate  id='form'>
       <input type="text" name="full-name" required maxlength="30" placeholder="Full name" class="input-field-contact"
-        aria-label="Input text name" />
-      <input type="email" name="email" required placeholder="Enter email" class="input-field-contact"
-        aria-label="Input email adddress" />
+        aria-label="Input text name" id='name'/>
+      <input type="text" name="email" required placeholder="Enter email" class="input-field-contact"
+        aria-label="Input email adddress" id='email' pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$"  />
       <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write your message here" required
         aria-label="Input comments" maxlength="500"></textarea>
       <input type="submit" value="Get in touch" class="button-contact-form work-button" />
+      <span class="error" id='error'></span>
     </form>
     <hr />
   </section>

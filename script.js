@@ -152,7 +152,7 @@ function makeNotScrollable() {
 loadProjectsInfo();
 
 document.addEventListener('click', (e) => {
-  if (e.target.matches('.work-button')) {
+  if (e.target.matches('.work-info .work-button')) {
     const projectInfo = getProjectData(e.target.dataset.id);
     const detailHTML = getDetailHTML(projectInfo);
     const worksContainer = document.querySelector('.works-container');
