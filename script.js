@@ -43,6 +43,28 @@ const projectsInfo = [
     client: 'FACEBOOK',
     roles: ['Full Stack Dev', '2015'],
   },
+  {
+    id: 5,
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './assets/SnapshootPortfolio4.svg',
+    technologies: ['html', 'css', 'javascript'],
+    linkLive: 'https://vicperalta.github.io/Portfolio/',
+    linkSource: 'https://github.com/VicPeralta/Portfolio',
+    client: 'FACEBOOK',
+    roles: ['Full Stack Dev', '2015'],
+  },
+  {
+    id: 6,
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './assets/SnapshootPortfolio4.svg',
+    technologies: ['html', 'css', 'javascript'],
+    linkLive: 'https://vicperalta.github.io/Portfolio/',
+    linkSource: 'https://github.com/VicPeralta/Portfolio',
+    client: 'FACEBOOK',
+    roles: ['Full Stack Dev', '2015'],
+  },
 ];
 
 function getProjectHTML(project) {
