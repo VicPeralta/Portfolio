@@ -24,18 +24,18 @@ function storageAvailable(type) {
 }
 
 const isLocalStorageAvilable = storageAvailable('localStorage');
-
+const storageType = localStorage;
 let formData = { name: '', email: '', comments: '' };
 function saveToLocalStorage(key, value) {
   formData[key] = value;
   if (isLocalStorageAvilable) {
-    localStorage.setItem('formData', JSON.stringify(formData));
+    storageType.setItem('formData', JSON.stringify(formData));
   }
 }
 
 function getValueFromStorage(key) {
   if (isLocalStorageAvilable) {
-    const data = localStorage.getItem('formData');
+    const data = storageType.getItem('formData');
     if (data) {
       formData = JSON.parse(data);
       return formData[key];
