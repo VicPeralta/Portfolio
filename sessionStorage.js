@@ -25,7 +25,7 @@ function storageAvailable(type) {
 
 const isLocalStorageAvilable = storageAvailable('localStorage');
 const storageType = localStorage;
-let formData = { name: '', email: '', comments: '' };
+let formData = {};
 function saveToLocalStorage(key, value) {
   formData[key] = value;
   if (isLocalStorageAvilable) {
@@ -50,12 +50,12 @@ window.addEventListener('load', () => {
   document.getElementById('comment').value = getValueFromStorage('commentsFormData');
 });
 
-document.getElementById('name').addEventListener('change', (e) => {
+document.getElementById('name').addEventListener('input', (e) => {
   saveToLocalStorage('nameFormData', e.target.value);
 });
-document.getElementById('email').addEventListener('change', (e) => {
+document.getElementById('email').addEventListener('input', (e) => {
   saveToLocalStorage('emailFormData', e.target.value);
 });
-document.getElementById('comment').addEventListener('change', (e) => {
+document.getElementById('comment').addEventListener('input', (e) => {
   saveToLocalStorage('commentsFormData', e.target.value);
 });
