@@ -41,5 +41,8 @@ formCtrl.addEventListener('submit', (e) => {
   if (email.search(regEmail) === -1) {
     errorCtrl.textContent = 'Expecting a valid email address';
     e.preventDefault();
+    return;
   }
+  // If the form is submited then clear the local storage
+  localStorage.clear();
 });
