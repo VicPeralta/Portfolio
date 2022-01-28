@@ -38,7 +38,7 @@ function getValueFromStorage(key) {
     const data = storageType.getItem('formData');
     if (data) {
       formData = JSON.parse(data);
-      return formData[key];
+      return formData[key] ? formData[key] : '';
     }
   }
   return '';

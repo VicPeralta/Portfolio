@@ -30,6 +30,10 @@ It is still a working project but you can watch a live demo here:
 
 👤 **Have-Samuel**
 - GitHub: [@Have-Samuel](https://github.com/Have-Samuel)
+
+👤 **Esteban Muñoz**
+- GitHub: [@Estebanmual](https://github.com/Estebanmual)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
