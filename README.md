@@ -1,8 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portfolio
+# My Portfolio Project
 
-> This is my Portfolio project
+> This is my project for a Portfolio.   
+It gives you a nice container for your different projects.  
+It looks great on Desktop computers, Mobile phones, and Tablets.
 ## Mobile
 <img src="./mobile-phone.png" width="50%" height="auto"/>
 
@@ -20,6 +22,7 @@ It is still a working project but you can watch a live demo here:
 
 - HTML
 - CSS
+- JavaScript
 
 ## Authors
 
