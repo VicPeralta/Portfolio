@@ -307,7 +307,7 @@ body {
 */
 
 .popup {
-  width: 100%;
+  width: 95%;
   height: 100%;
   background-color: #c1c7d0;
   background-image: url('./assets/backgroundDetail.png');
@@ -401,9 +401,15 @@ body {
 
 @media screen and (min-width: 641px) {
   .detail-container img {
-    width: 90%;
+    width: 50%;
     height: 50%;
     margin: 0 auto;
+  }
+
+  .popup {
+    width: 90%;
+    height: 95%;
+    margin-left: 5%;
   }
 
   .detail-info {
@@ -831,6 +837,7 @@ body {
     width: 80%;
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
     background-color: #fff;
   }
 
