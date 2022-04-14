@@ -45,6 +45,17 @@ const projectsInfo = [
   },
   {
     id: 5,
+    name: 'Chess Leaders',
+    description: "A web app that lets you check the leaders in all chess games modalities from chess.com. And in case you're wondering, I am not in any of them.",
+    image: './assets/chessLeaders.png',
+    technologies: ['react', 'redux', 'javascript'],
+    linkLive: 'https://vicperalta.github.io/chess-leaders/',
+    linkSource: 'https://github.com/VicPeralta/chess-leaders',
+    client: 'MICROVERSE',
+    roles: ['Front End Dev', '2022'],
+  },
+  {
+    id: 6,
     name: 'Math-Magicians',
     description: 'A SPA that allows you to use a Calculator and gives you Math information',
     image: './assets/math.png',
@@ -55,7 +66,7 @@ const projectsInfo = [
     roles: ['Front End Dev', '2022'],
   },
   {
-    id: 6,
+    id: 7,
     name: 'StarGazers',
     description: 'A fun App that consumes the GitHub API and let you know your stargazers',
     image: './assets/stars.png',
@@ -172,7 +183,15 @@ function makeNotScrollable() {
 }
 
 loadProjectsInfo();
-
+document.getElementById('resume-btn').addEventListener('click', () => {
+  const url = './ResumeVictorPeralta-0422.pdf';
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = url.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
 document.addEventListener('click', (e) => {
   if (e.target.matches('.work-info .work-button')) {
     const projectInfo = getProjectData(e.target.dataset.id);
