@@ -58,6 +58,16 @@ body {
   background-color: #fff;
 }
 
+.hover {
+  height: 40px;
+}
+
+.hover:hover {
+  background-color: #505edb;
+  color: white;
+  height: 40px;
+  border-radius: 50%;
+}
 /* This line belongs to Welcome screen, but to fix a linter error it is place here */
 .socialMedia a {
   text-decoration: none;

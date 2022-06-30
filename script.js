@@ -56,6 +56,17 @@ const projectsInfo = [
   },
   {
     id: 6,
+    name: 'The Blog App',
+    description: 'A blogger app where you can post any idea, share all your experiences and thoughts, and also see the post from your friends.',
+    image: './assets/blogger.png',
+    technologies: ['Ruby', 'Rails', 'PostgreSql'],
+    linkLive: 'https://safe-brook-54426.herokuapp.com/',
+    linkSource: 'https://github.com/VicPeralta/blogapp',
+    client: 'MICROVERSE',
+    roles: ['Back End Dev', '2022'],
+  },
+  {
+    id: 7,
     name: 'Math-Magicians',
     description: 'A SPA that allows you to use a Calculator and gives you Math information',
     image: './assets/math.png',
@@ -66,7 +77,7 @@ const projectsInfo = [
     roles: ['Front End Dev', '2022'],
   },
   {
-    id: 7,
+    id: 8,
     name: 'StarGazers',
     description: 'A fun App that consumes the GitHub API and let you know your stargazers',
     image: './assets/stars.png',
@@ -138,7 +149,7 @@ function getDetailHTML(project) {
   <div class="detail-container">
       <div class="detail-header">
         <h3 class="project-title">${project.name}</h3>
-        <button>X</button>
+        <button class="hover">X</button>
       </div>
       <div class="highlights">
         <h4 class="project-name">${project.client}</h4>
