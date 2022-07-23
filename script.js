@@ -56,6 +56,17 @@ const projectsInfo = [
   },
   {
     id: 6,
+    name: 'BookDev',
+    description: 'Need help with the development of a new App? Training, consulting? Look no further and go to this application to book a reliable software developer.',
+    image: './assets/bookdev.png',
+    technologies: ['Ruby', 'Rails', 'PostgreSql', 'React', 'Redux'],
+    linkLive: 'https://book-dev.herokuapp.com',
+    linkSource: 'https://github.com/VicPeralta/final-capstone-api',
+    client: 'MICROVERSE',
+    roles: ['Back End Dev', '2022'],
+  },
+  {
+    id: 7,
     name: 'The Blog App',
     description: 'A blogger app where you can post any idea, share all your experiences and thoughts, and also see the post from your friends.',
     image: './assets/blogger.png',
@@ -66,7 +77,7 @@ const projectsInfo = [
     roles: ['Back End Dev', '2022'],
   },
   {
-    id: 7,
+    id: 8,
     name: 'Math-Magicians',
     description: 'A SPA that allows you to use a Calculator and gives you Math information',
     image: './assets/math.png',
@@ -77,7 +88,7 @@ const projectsInfo = [
     roles: ['Front End Dev', '2022'],
   },
   {
-    id: 8,
+    id: 9,
     name: 'StarGazers',
     description: 'A fun App that consumes the GitHub API and let you know your stargazers',
     image: './assets/stars.png',

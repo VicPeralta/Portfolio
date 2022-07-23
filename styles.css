@@ -252,6 +252,8 @@ body {
 
 .work-lenguages ul {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
 }
@@ -261,6 +263,7 @@ body {
   color: var(--new-work-li-color-lan);
   margin-right: 8px;
   margin-left: 0;
+  margin-bottom: 5px;
   padding: 4px 12px;
   border-radius: 8px;
   font-weight: 500;
