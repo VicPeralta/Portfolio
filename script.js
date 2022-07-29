@@ -206,7 +206,7 @@ function makeNotScrollable() {
 
 loadProjectsInfo();
 document.getElementById('resume-btn').addEventListener('click', () => {
-  const url = './ResumeVictorPeralta-0422.pdf';
+  const url = './ResumeVictorPeralta.pdf';
   const a = document.createElement('a');
   a.href = url;
   a.download = url.split('/').pop();
