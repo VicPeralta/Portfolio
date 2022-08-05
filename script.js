@@ -1,104 +1,33 @@
-const projectsInfo = [
-  {
-    id: 1,
-    name: 'Capablanca Memorial',
-    description: 'Remembering the great Cuban and III World Chess Champion with an unprecedented event, two days of talks about his best chess games.',
-    image: './assets/chess.png',
-    technologies: ['html', 'css', 'javascript'],
-    linkLive: 'https://vicperalta.github.io/ChessEvent/',
-    linkSource: 'https://github.com/VicPeralta/ChessEvent',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-  {
-    id: 2,
-    name: 'Bookstore CMS',
-    description: 'A Bookstore App created using React & Redux that allows you to keep track of your favorites books',
-    image: './assets/bookstore.png',
-    technologies: ['javascript', 'react', 'redux'],
-    linkLive: 'https://vicperalta.github.io/react-bookstore/',
-    linkSource: 'https://github.com/VicPeralta/react-bookstore',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-  {
-    id: 3,
-    name: 'Study & Relax',
-    description: 'This App gives you a recommendation of JavaScript books to read and also lets you hear some music, so you can concentrate and relax while you are studying',
-    image: './assets/study.jpg',
-    technologies: ['html', 'webpack', 'css', 'javascript'],
-    linkLive: 'https://vicperalta.github.io/Capstone-JavaScript/',
-    linkSource: 'https://github.com/VicPeralta/Capstone-JavaScript',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-  {
-    id: 4,
-    name: 'Space-Travelers',
-    description: 'A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
-    image: './assets/space.png',
-    technologies: ['react', 'redux', 'bootstrap'],
-    linkLive: 'https://space-travelers-react.netlify.app/',
-    linkSource: 'https://github.com/VicPeralta/space-travelers',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-  {
-    id: 5,
-    name: 'Chess Leaders',
-    description: "A web app that lets you check the leaders in all chess games modalities from chess.com. And in case you're wondering, I am not in any of them.",
-    image: './assets/chessLeaders.png',
-    technologies: ['react', 'redux', 'javascript'],
-    linkLive: 'https://vicperalta.github.io/chess-leaders/',
-    linkSource: 'https://github.com/VicPeralta/chess-leaders',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-  {
-    id: 6,
-    name: 'BookDev',
-    description: 'Need help with the development of a new App? Training, consulting? Look no further and go to this application to book a reliable software developer.',
-    image: './assets/bookdev.png',
-    technologies: ['Ruby', 'Rails', 'PostgreSql', 'React', 'Redux'],
-    linkLive: 'https://book-dev.herokuapp.com',
-    linkSource: 'https://github.com/VicPeralta/final-capstone-api',
-    client: 'MICROVERSE',
-    roles: ['Back End Dev', '2022'],
-  },
-  {
-    id: 7,
-    name: 'The Blog App',
-    description: 'A blogger app where you can post any idea, share all your experiences and thoughts, and also see the post from your friends.',
-    image: './assets/blogger.png',
-    technologies: ['Ruby', 'Rails', 'PostgreSql'],
-    linkLive: 'https://safe-brook-54426.herokuapp.com/',
-    linkSource: 'https://github.com/VicPeralta/blogapp',
-    client: 'MICROVERSE',
-    roles: ['Back End Dev', '2022'],
-  },
-  {
-    id: 8,
-    name: 'Math-Magicians',
-    description: 'A SPA that allows you to use a Calculator and gives you Math information',
-    image: './assets/math.png',
-    technologies: ['html', 'css', 'javascript', 'react'],
-    linkLive: 'https://vicperalta.github.io/math-magicians/',
-    linkSource: 'https://github.com/VicPeralta/math-magicians',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-  {
-    id: 9,
-    name: 'StarGazers',
-    description: 'A fun App that consumes the GitHub API and let you know your stargazers',
-    image: './assets/stars.png',
-    technologies: ['html', 'css', 'javascript'],
-    linkLive: 'https://vicperalta.github.io/starGazers/',
-    linkSource: 'https://github.com/VicPeralta/starGazers',
-    client: 'MICROVERSE',
-    roles: ['Front End Dev', '2022'],
-  },
-];
+class ProjectInfo {
+  constructor() {
+    this.subscribers = [];
+  }
+
+  fetchData() {
+    ProjectInfo.getProjectsFromFile().then((data) => {
+      this.projectsInfo = data;
+      this.subscribers.forEach((subscriber) => {
+        subscriber(data);
+      });
+    });
+  }
+
+  subscribe(callback) {
+    this.subscribers.push(callback);
+  }
+
+  static async getProjectsFromFile() {
+    const response = await fetch('./projects.json');
+    return response.json();
+  }
+
+  getProjectData(id) {
+    for (let i = 0; i < this.projectsInfo.length; i += 1) {
+      if (this.projectsInfo[i].id === Number(id)) return this.projectsInfo[i];
+    }
+    return undefined;
+  }
+}
 
 function getProjectHTML(project) {
   let technologies = '';
@@ -129,7 +58,7 @@ function getProjectHTML(project) {
   </div>`;
 }
 
-function loadProjectsInfo() {
+function loadProjectsInfo(projectsInfo) {
   const worksContainer = document.querySelector('.works-container');
   for (let i = 0; i < projectsInfo.length; i += 1) {
     const htmlProject = getProjectHTML(projectsInfo[i]);
@@ -138,13 +67,6 @@ function loadProjectsInfo() {
     workCard.innerHTML = htmlProject;
     worksContainer.appendChild(workCard);
   }
-}
-
-function getProjectData(id) {
-  for (let i = 0; i < projectsInfo.length; i += 1) {
-    if (projectsInfo[i].id === Number(id)) return projectsInfo[i];
-  }
-  return undefined;
 }
 
 function getDetailHTML(project) {
@@ -204,7 +126,9 @@ function makeNotScrollable() {
   body.classList.add('makeNotScrollable');
 }
 
-loadProjectsInfo();
+const projects = new ProjectInfo();
+projects.subscribe(loadProjectsInfo);
+projects.fetchData();
 document.getElementById('resume-btn').addEventListener('click', () => {
   const url = './ResumeVictorPeralta.pdf';
   const a = document.createElement('a');
@@ -214,9 +138,10 @@ document.getElementById('resume-btn').addEventListener('click', () => {
   a.click();
   document.body.removeChild(a);
 });
+
 document.addEventListener('click', (e) => {
   if (e.target.matches('.work-info .work-button')) {
-    const projectInfo = getProjectData(e.target.dataset.id);
+    const projectInfo = projects.getProjectData(e.target.dataset.id);
     const detailHTML = getDetailHTML(projectInfo);
     const worksContainer = document.querySelector('.works-container');
     const detailSection = document.createElement('div');
