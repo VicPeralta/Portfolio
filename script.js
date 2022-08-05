@@ -143,7 +143,7 @@ document.addEventListener('click', (e) => {
   if (e.target.matches('.work-info .work-button')) {
     const projectInfo = projects.getProjectData(e.target.dataset.id);
     const detailHTML = getDetailHTML(projectInfo);
-    const worksContainer = document.querySelector('.works-container');
+    const worksContainer = document.querySelector('body');
     const detailSection = document.createElement('div');
     detailSection.classList.add('popup');
     detailSection.style.position = 'absolute';
@@ -154,7 +154,7 @@ document.addEventListener('click', (e) => {
     const closeButton = document.querySelector('.detail-container button');
     closeButton.addEventListener('click', () => {
       const pop = document.querySelector('.popup');
-      const worksContainer = document.querySelector('.works-container');
+      const worksContainer = document.querySelector('body');
       worksContainer.removeChild(pop);
       makeScrollable();
     });

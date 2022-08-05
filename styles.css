@@ -82,6 +82,7 @@ body {
   text-align: center;
   color: #344563;
   margin: 10px;
+  padding: 5px;
 }
 
 .hamburger-button {
@@ -320,6 +321,7 @@ body {
 .popup {
   width: 95%;
   height: 100%;
+  overflow: scroll;
   background-color: #c1c7d0;
   background-image: url('./assets/backgroundDetail.png');
   background-repeat: no-repeat;
@@ -340,7 +342,7 @@ body {
 
 .detail-container {
   width: 95%;
-  height: 95%;
+  height: auto;
   background-color: white;
   margin: 10px auto;
   padding: 18px 16px;
@@ -763,6 +765,7 @@ body {
   .toolbar a:hover {
     background-color: var(--new-primary-color);
     color: #fff;
+    border-radius: 8px;
   }
 
   .toolbar a:focus {
