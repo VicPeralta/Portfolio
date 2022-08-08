@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /*
   ******************************************************************************
     General properties
@@ -9,7 +10,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-padding-top: 70px;
 }
 
@@ -78,6 +79,7 @@ body {
   height: 40px;
   border-radius: 50%;
 }
+
 /* This line belongs to Welcome screen, but to fix a linter error it is place here */
 .socialMedia a {
   text-decoration: none;
@@ -842,9 +844,11 @@ body {
     flex-direction: row;
     gap: 10px;
   }
-  .text-centered{
+
+  .text-centered {
     text-align: center;
   }
+
   .lenguage-card {
     flex-direction: column;
     align-items: center;
