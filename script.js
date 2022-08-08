@@ -130,7 +130,7 @@ const projects = new ProjectInfo();
 projects.subscribe(loadProjectsInfo);
 projects.fetchData();
 document.getElementById('resume-btn').addEventListener('click', () => {
-  const url = './ResumeVictorPeralta.pdf';
+  const url = './CV-Victor_Peralta.pdf';
   const a = document.createElement('a');
   a.href = url;
   a.download = url.split('/').pop();
@@ -160,3 +160,12 @@ document.addEventListener('click', (e) => {
     });
   }
 });
+const btnSkillsHandler = (e) => {
+  const lan = document.getElementById(e.target.dataset.section);
+  lan.classList.toggle('hidden');
+  lan.classList.toggle('flex');
+  e.target.classList.toggle('arrow-down');
+};
+document.getElementById('languages-btn').addEventListener('click', btnSkillsHandler);
+document.getElementById('frameworks-btn').addEventListener('click', btnSkillsHandler);
+document.getElementById('skills-btn').addEventListener('click', btnSkillsHandler);

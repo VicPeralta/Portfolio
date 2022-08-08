@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-padding-top: 70px;
+}
+
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
@@ -36,6 +40,14 @@ body {
   position: fixed;
   top: 0;
   background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .nav-bar ul {
@@ -321,7 +333,8 @@ body {
 .popup {
   width: 95%;
   height: 100%;
-  overflow: scroll;
+  min-height: 95vh;
+  overflow: auto;
   background-color: #c1c7d0;
   background-image: url('./assets/backgroundDetail.png');
   background-repeat: no-repeat;
@@ -400,7 +413,7 @@ body {
 .lenguage-card img {
   width: 48px;
   height: auto;
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 .details-footer button img {
@@ -496,10 +509,10 @@ body {
 }
 
 .languages {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0;
+  flex-wrap: wrap;
 }
 
 .lenguage-card {
@@ -527,7 +540,7 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .languages ul {
@@ -753,9 +766,8 @@ body {
 
   .toolbar {
     justify-content: space-between;
-    width: 80%;
-    margin: 10px auto;
-    position: relative;
+    width: 100%;
+    position: fixed;
   }
 
   .toolbar ul {
@@ -828,13 +840,24 @@ body {
 
   .languages {
     flex-direction: row;
+    gap: 10px;
   }
-
+  .text-centered{
+    text-align: center;
+  }
   .lenguage-card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 120px;
-    margin-right: 12px;
+    height: 120px;
+  }
+
+  .lenguage-card img {
+    max-width: 64px;
+    max-height: 64px;
+    margin-right: 0;
+    flex: 1;
   }
 
   .work-button {
