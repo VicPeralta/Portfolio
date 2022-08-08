@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /*
   ******************************************************************************
     General properties
@@ -7,6 +8,10 @@
 */
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 70px;
 }
 
 body {
@@ -38,6 +43,14 @@ body {
   background-color: white;
 }
 
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
 .nav-bar ul {
   list-style: none;
   display: none;
@@ -66,6 +79,7 @@ body {
   height: 40px;
   border-radius: 50%;
 }
+
 /* This line belongs to Welcome screen, but to fix a linter error it is place here */
 .socialMedia a {
   text-decoration: none;
@@ -82,6 +96,7 @@ body {
   text-align: center;
   color: #344563;
   margin: 10px;
+  padding: 5px;
 }
 
 .hamburger-button {
@@ -320,6 +335,8 @@ body {
 .popup {
   width: 95%;
   height: 100%;
+  min-height: 95vh;
+  overflow: auto;
   background-color: #c1c7d0;
   background-image: url('./assets/backgroundDetail.png');
   background-repeat: no-repeat;
@@ -340,7 +357,7 @@ body {
 
 .detail-container {
   width: 95%;
-  height: 95%;
+  height: auto;
   background-color: white;
   margin: 10px auto;
   padding: 18px 16px;
@@ -398,7 +415,7 @@ body {
 .lenguage-card img {
   width: 48px;
   height: auto;
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 .details-footer button img {
@@ -494,10 +511,10 @@ body {
 }
 
 .languages {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0;
+  flex-wrap: wrap;
 }
 
 .lenguage-card {
@@ -525,7 +542,7 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .languages ul {
@@ -751,9 +768,8 @@ body {
 
   .toolbar {
     justify-content: space-between;
-    width: 80%;
-    margin: 10px auto;
-    position: relative;
+    width: 100%;
+    position: fixed;
   }
 
   .toolbar ul {
@@ -763,6 +779,7 @@ body {
   .toolbar a:hover {
     background-color: var(--new-primary-color);
     color: #fff;
+    border-radius: 8px;
   }
 
   .toolbar a:focus {
@@ -825,13 +842,26 @@ body {
 
   .languages {
     flex-direction: row;
+    gap: 10px;
+  }
+
+  .text-centered {
+    text-align: center;
   }
 
   .lenguage-card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 120px;
-    margin-right: 12px;
+    height: 120px;
+  }
+
+  .lenguage-card img {
+    max-width: 64px;
+    max-height: 64px;
+    margin-right: 0;
+    flex: 1;
   }
 
   .work-button {
