@@ -1,226 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JD4NYFMS6L"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-JD4NYFMS6L');
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Victor's Portfolio - Web Developer" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <script src="./menu.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./formValidation.js" defer></script>
+    <script src="./sessionStorage.js" defer></script>
+    <title>Victor's Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD4NYFMS6L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-JD4NYFMS6L');
-  </script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Victor's Portfolio - Web Developer" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./menu.css" />
-  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-  <script src="./menu.js" defer></script>
-  <script src="./script.js" defer></script>
-  <script src="./formValidation.js" defer></script>
-  <script src="./sessionStorage.js" defer></script>
-  <title>Victor's Portfolio</title>
-</head>
-
-<body>
-  <header class="toolbar">
-    <div class="myLogo"><a href="#welcome">Victor Peralta</a></div>
-    <nav class="nav-bar">
-      <button type="button" class="hamburger-button">&#8801;</button>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="menu-options invisible">
-      <button type="button" id="close-btn">X</button>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <hr>
+  <body>
+    <header class="toolbar">
+      <div class="myLogo"><a href="#welcome">Victor Peralta</a></div>
+      <nav class="nav-bar">
+        <button type="button" class="hamburger-button">&#8801;</button>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-options invisible">
+        <button type="button" id="close-btn">X</button>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <hr />
+      </div>
+    </header>
+    <div class="welcome-section" id="welcome">
+      <section class="headline">
+        <div class="intro">
+          <h1>I'm Victor<br />Glad to see you</h1>
+          <p class="mainText">
+            I'm a Full Stack Web Developer, a lifelong learner always looking
+            for ways to improve my skills and achieve bigger goals. Able to work
+            effectively on independent projects and collaborate as part of a
+            productive team. Passionate about contributing to, and leveraging
+            advances in software development toward crafting tools for
+            problem-solving.
+          </p>
+          <div class="socialMedia">
+            <h2>LET'S CONNECT</h2>
+            <ul class="socialMediaImages">
+              <li>
+                <a
+                  href="https://github.com/VicPeralta"
+                  target="_blank"
+                rel="noreferrer noopener"
+                >
+                  <img
+                    src="./assets/github.svg"
+                    alt="Victor's GitHub account"
+                    width="18"
+                    height="20"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/vicperalta/"
+                  target="_blank"
+                rel="noreferrer noopener"
+                >
+                  <img
+                    src="./assets/LinkedinIcon.svg"
+                    alt="Victor's Linkedin account"
+                    width="19"
+                    height="19"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/VicPeralta"
+                  target="_blank"
+                rel="noreferrer noopener"
+                >
+                  <img
+                    src="./assets/twitter.svg"
+                    alt="Victor's Twitter account"
+                    width="20"
+                    height="19"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@VicPeralta"
+                  target="_blank"
+                rel="noreferrer noopener"
+                >
+                  <img
+                    src="./assets/medium.svg"
+                    alt="Victor's Medium account"
+                    width="20"
+                    height="16"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://angel.co/u/vicperalta"
+                  target="_blank"
+                rel="noreferrer noopener"
+                >
+                  <img
+                    src="./assets/angellist.svg"
+                    alt="Victor's AngelList account"
+                    width="14"
+                    height="20"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-  </header>
-  <div class="welcome-section" id="welcome">
-    <section class="headline">
-      <div class="intro">
-        <h1>I'm Victor<br />Glad to see you</h1>
+    <div class="works-container" id="portfolio"></div>
+    <section class="about-me" id="about">
+      <div class="about-intro">
+        <h2>
+          About <br />
+          Myself
+        </h2>
         <p class="mainText">
-          I'm a Full Stack Web Developer, a lifelong learner always looking for ways to improve my skills and achieve bigger goals.
-          Able to work effectively on independent projects and collaborate as part of a productive team. Passionate about
-          contributing to, and leveraging advances in software development toward crafting tools for problem-solving.
-         
+          I’m a Full-Stack Web Developer! I can help you build a product,
+          feature, or website. Look through some of my work and experience!
+          Don't hesitate to contact me if you like what you see and have a
+          project you need to be coded.
         </p>
         <div class="socialMedia">
-          <h2>LET'S CONNECT</h2>
+          <h3>LET'S CONNECT</h3>
           <ul class="socialMediaImages">
             <li>
-              <a href="https://github.com/VicPeralta" target="_blank">
-                <img src="./assets/github.svg" alt="Victor's GitHub account" width="18" height="20" />
+              <a
+                href="https://github.com/VicPeralta"
+                target="_blank"
+              rel="noreferrer noopener"
+              >
+                <img
+                  src="./assets/github.svg"
+                  alt="Victor's Github account"
+                  width="18"
+                  height="20"
+                />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/vicperalta/" target="_blank">
-                <img src="./assets/LinkedinIcon.svg" alt="Victor's Linkedin account" width="19" height="19" />
+              <a
+                href="https://www.linkedin.com/in/vicperalta/"
+                target="_blank"
+              rel="noreferrer noopener"
+              >
+                <img
+                  src="./assets/LinkedinIcon.svg"
+                  alt="Victor's Linkedin account"
+                  width="19"
+                  height="19"
+                />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/VicPeralta" target="_blank">
-                <img src="./assets/twitter.svg" alt="Victor's Twitter account" width="20" height="19" />
+              <a
+                href="https://twitter.com/VicPeralta"
+                target="_blank"
+              rel="noreferrer noopener"
+              >
+                <img
+                  src="./assets/twitter.svg"
+                  alt="Victor's Twitter account"
+                  width="20"
+                  height="19"
+                />
               </a>
             </li>
             <li>
-              <a href="https://medium.com/@VicPeralta" target="_blank">
-                <img src="./assets/medium.svg" alt="Victor's Medium account" width="20" height="16" />
+              <a
+                href="https://angel.co/u/vicperalta"
+                target="_blank"
+              rel="noreferrer noopener"
+              >
+                <img
+                  src="./assets/angellist.svg"
+                  alt="Victor's AngelList account"
+                  width="14"
+                  height="20"
+                />
               </a>
             </li>
             <li>
-              <a href="https://angel.co/u/vicperalta" target="_blank">
-                <img src="./assets/angellist.svg" alt="Victor's AngelList account" width="14" height="20" />
+              <a
+                href="https://medium.com/@VicPeralta"
+                target="_blank"
+              rel="noreferrer noopener"
+              >
+                <img
+                  src="./assets/medium.svg"
+                  alt="Victor's Medium account"
+                  width="20"
+                  height="16"
+                />
               </a>
             </li>
           </ul>
         </div>
+        <button type="button" class="work-button" id="resume-btn">
+          Get my resume
+        </button>
       </div>
-    </section>
-  </div>
-  <div class="works-container" id="portfolio">
-   
-  </div>
-  <section class="about-me" id="about">
-    <div class="about-intro">
-      <h2>About <br> Myself</h2>
-      <p class="mainText">
-        I’m a Full-Stack Web Developer! I can help you build a product , feature
-          or website. Look through some of my work and experience! If you like
-          what you see and have a project you need coded, don’t hestiate to
-          contact me.
-      </p>
-      <div class="socialMedia">
-        <h3>LET'S CONNECT</h3>
-        <ul class="socialMediaImages">
-          <li>
-            <a href="https://github.com/VicPeralta" target="_blank">
-              <img src="./assets/github.svg" alt="Victor's Github account" width="18" height="20" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/vicperalta/" target="_blank">
-              <img src="./assets/LinkedinIcon.svg" alt="Victor's Linkedin account" width="19" height="19" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/VicPeralta" target="_blank">
-              <img src="./assets/twitter.svg" alt="Victor's Twitter account" width="20" height="19" />
-            </a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/vicperalta" target="_blank">
-              <img src="./assets/angellist.svg" alt="Victor's AngelList account" width="14" height="20" />
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@VicPeralta" target="_blank">
-              <img src="./assets/medium.svg" alt="Victor's Medium account" width="20" height="16" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <button type="button" class="work-button" id="resume-btn">Get my resume</button>
-    </div>
-    <div class="about-technologies">
-      <div class="languages-option">
-        <h3 class="languages-title">Languages</h3>
-        <button type="button" class="arrow-button arrow-down" id="languages-btn" data-section="languages">&gt;</button>
-      </div>
-      <div class="languages flex" id="languages">
-        <div class="lenguage-card">
-          <img src="./assets/javascript.png" width="300" height="68" alt="javascript image" />
-          <p>JavaScript</p>
+      <div class="about-technologies">
+        <div class="languages-option">
+          <h3 class="languages-title">Languages</h3>
+          <button
+            type="button"
+            class="arrow-button arrow-down"
+            id="languages-btn"
+            data-section="languages"
+          >
+            &gt;
+          </button>
         </div>
-        <div class="lenguage-card">
-          <img src="./assets/html.svg" width="300" height="68" alt="html image" />
-          <p>HTML</p>
-        </div>
-        <div class="lenguage-card">
-          <img src="./assets/css.svg" width="300" height="68" alt="css image" />
-          <p>CSS</p>
-        </div>
-        <div class="lenguage-card">
-          <img src="./assets/ruby.png" width="300" height="68" alt="ruby image" />
-          <p>Ruby</p>
-        </div>
-      </div>
-      <div class="languages-option">
-        <h3 class="languages-title">Frameworks</h3>
-        <button type="button" class="arrow-button" id="frameworks-btn" data-section="frameworks">&gt;</button>
-      </div>
-      <div class="languages flex" id="frameworks">
-        <div class="lenguage-card">
-          <img src="./assets/react.png" width="300" height="68" alt="react image" />
-          <p>React</p>
-        </div>
-        <div class="lenguage-card">
-          <img src="./assets/redux.svg" width="300" height="68" alt="redux image" />
-          <p>Redux</p>
-        </div>
-        <div class="lenguage-card">
-          <img src="./assets/rails.png" width="300" height="68" alt="rails image" />
-          <p>Rails</p>
-        </div>
-        <div class="lenguage-card">
-          <img src="./assets/tailwind.png" width="300" height="68" alt="rails image" />
-          <p>Tailwind</p>
-        </div>
-      </div>
-      <div class="languages-option">
-        <h3 class="languages-title">Skills</h3>
-        <button type="button" class="arrow-button" id="skills-btn" data-section="skills">&gt;</button>
-      </div>
-      <div class="languages flex" id="skills">
+        <div class="languages flex" id="languages">
           <div class="lenguage-card">
-            <img src="./assets/collaboration.png" width="300" height="68" alt="react image" />
+            <img
+              src="./assets/javascript.png"
+              width="300"
+              height="68"
+              alt="javascript image"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="lenguage-card">
+            <img
+              src="./assets/html.svg"
+              width="300"
+              height="68"
+              alt="html image"
+            />
+            <p>HTML</p>
+          </div>
+          <div class="lenguage-card">
+            <img
+              src="./assets/css.svg"
+              width="300"
+              height="68"
+              alt="css image"
+            />
+            <p>CSS</p>
+          </div>
+          <div class="lenguage-card">
+            <img
+              src="./assets/ruby.png"
+              width="300"
+              height="68"
+              alt="ruby image"
+            />
+            <p>Ruby</p>
+          </div>
+        </div>
+        <div class="languages-option">
+          <h3 class="languages-title">Frameworks</h3>
+          <button
+            type="button"
+            class="arrow-button"
+            id="frameworks-btn"
+            data-section="frameworks"
+          >
+            &gt;
+          </button>
+        </div>
+        <div class="languages flex" id="frameworks">
+          <div class="lenguage-card">
+            <img
+              src="./assets/react.png"
+              width="300"
+              height="68"
+              alt="react image"
+            />
+            <p>React</p>
+          </div>
+          <div class="lenguage-card">
+            <img
+              src="./assets/redux.svg"
+              width="300"
+              height="68"
+              alt="redux image"
+            />
+            <p>Redux</p>
+          </div>
+          <div class="lenguage-card">
+            <img
+              src="./assets/rails.png"
+              width="300"
+              height="68"
+              alt="rails image"
+            />
+            <p>Rails</p>
+          </div>
+          <div class="lenguage-card">
+            <img
+              src="./assets/tailwind.png"
+              width="300"
+              height="68"
+              alt="rails image"
+            />
+            <p>Tailwind</p>
+          </div>
+        </div>
+        <div class="languages-option">
+          <h3 class="languages-title">Skills</h3>
+          <button
+            type="button"
+            class="arrow-button"
+            id="skills-btn"
+            data-section="skills"
+          >
+            &gt;
+          </button>
+        </div>
+        <div class="languages flex" id="skills">
+          <div class="lenguage-card">
+            <img
+              src="./assets/collaboration.png"
+              width="300"
+              height="68"
+              alt="react image"
+            />
             <p>Teamwork</p>
           </div>
           <div class="lenguage-card">
-            <img src="./assets/pair.png" width="300" height="68" alt="react image" />
+            <img
+              src="./assets/pair.png"
+              width="300"
+              height="68"
+              alt="react image"
+            />
             <p class="text-centered">Pair Programming</p>
           </div>
           <div class="lenguage-card">
-            <img src="./assets/problem.png" width="300" height="68" alt="react image" />
+            <img
+              src="./assets/problem.png"
+              width="300"
+              height="68"
+              alt="react image"
+            />
             <p>Problem Solving</p>
           </div>
           <div class="lenguage-card">
-            <img src="./assets/ethic.png" width="300" height="68" alt="react image" />
+            <img
+              src="./assets/ethic.png"
+              width="300"
+              height="68"
+              alt="react image"
+            />
             <p>Work Ethic</p>
           </div>
+        </div>
       </div>
-      
-    </div>
-  </section>
-  <section class="contact-me" id="contact">
-    <h3>Contact me</h3>
-    <p>
-      If you have an application you are interested in developing, a feature
-      that you need built or a project that needs coding. I’d love to help
-      with it
-    </p>
-    <form novalidate action="https://formspree.io/f/mwkypgbn" method="post" id='form'>
-      <input type="text" name="full-name" required maxlength="30" placeholder="Full name" class="input-field-contact"
-        aria-label="Input text name" id='name'/>
-      <input type="text" name="email" required placeholder="Enter email" class="input-field-contact"
-        aria-label="Input email adddress" id='email' pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$"  />
-      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write your message here" required
-        aria-label="Input comments" maxlength="500"></textarea>
-      <input type="submit" value="Get in touch" class="button-contact-form work-button" />
-      <span class="error" id='error'></span>
-    </form>
-    <hr />
-  </section>
-</body>
-
+    </section>
+    <section class="contact-me" id="contact">
+      <h3>Contact me</h3>
+      <p>
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it.
+      </p>
+      <form
+        novalidate
+        action="https://formspree.io/f/mwkypgbn"
+        method="post"
+        id="form"
+      >
+        <input
+          type="text"
+          name="full-name"
+          required
+          maxlength="30"
+          placeholder="Full name"
+          class="input-field-contact"
+          aria-label="Input text name"
+          id="name"
+        />
+        <input
+          type="text"
+          name="email"
+          required
+          placeholder="Enter email"
+          class="input-field-contact"
+          aria-label="Input email adddress"
+          id="email"
+          pattern="^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$"
+        />
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Write your message here"
+          required
+          aria-label="Input comments"
+          maxlength="500"
+        ></textarea>
+        <input
+          type="submit"
+          value="Get in touch"
+          class="button-contact-form work-button"
+        />
+        <span class="error" id="error"></span>
+      </form>
+      <hr />
+    </section>
+  </body>
 </html>

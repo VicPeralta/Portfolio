@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "Bookstore CMS",
-    "description": "A Bookstore App created using React & Redux that allows you to keep track of your favorites books",
+    "description": "A Bookstore App created using React & Redux that allows you to keep track of your favorites books.",
     "image": "./assets/bookstore.png",
     "technologies": ["javascript", "react", "redux"],
     "linkLive": "https://vicperalta.github.io/react-bookstore/",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "name": "Study & Relax",
-    "description": "This App gives you a recommendation of JavaScript books to read and also lets you hear some music, so you can concentrate and relax while you are studying",
+    "description": "This App gives you a recommendation of JavaScript books to read and also lets you hear some music, so you can concentrate and relax while you are studying.",
     "image": "./assets/study.jpg",
     "technologies": ["html", "webpack", "css", "javascript"],
     "linkLive": "https://vicperalta.github.io/Capstone-JavaScript/",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "name": "Math-Magicians",
-    "description": "A SPA that allows you to use a Calculator and gives you Math information",
+    "description": "A SPA that allows you to use a Calculator and gives you Math information.",
     "image": "./assets/math.png",
     "technologies": ["html", "css", "javascript", "react"],
     "linkLive": "https://vicperalta.github.io/math-magicians/",
@@ -90,7 +90,7 @@
   {
     "id": 9,
     "name": "StarGazers",
-    "description": "A fun App that consumes the GitHub API and let you know your stargazers",
+    "description": "A fun App that consumes the GitHub API and let you know your stargazers.",
     "image": "./assets/stars.png",
     "technologies": ["html", "css", "javascript"],
     "linkLive": "https://vicperalta.github.io/starGazers/",
