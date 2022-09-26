@@ -82,7 +82,7 @@ function getDetailHTML(project) {
   <div class="detail-container">
       <div class="detail-header">
         <h3 class="project-title">${project.name}</h3>
-        <button class="hover">X</button>
+        <button class="hover" id="close-dialog-btn">X</button>
       </div>
       <div class="highlights">
         <h4 class="project-name">${project.client}</h4>
@@ -114,6 +114,13 @@ function getDetailHTML(project) {
   `;
 }
 
+function getModalDialog(projectInfo) {
+  const dialog = document.getElementById('dialog');
+  const dialogContent = getDetailHTML(projectInfo);
+  dialog.innerHTML = dialogContent;
+  return dialog;
+}
+
 function makeScrollable() {
   const body = document.querySelector('body');
   body.classList.remove('makeNotScrollable');
@@ -138,26 +145,20 @@ document.getElementById('resume-btn').addEventListener('click', () => {
   a.click();
   document.body.removeChild(a);
 });
-
+function closeDialogHandler() {
+  const dialog = document.getElementById('dialog');
+  dialog.close();
+  makeScrollable();
+  document.querySelector('.detail-container button').removeEventListener('click', closeDialogHandler);
+}
 document.addEventListener('click', (e) => {
   if (e.target.matches('.work-info .work-button')) {
     const projectInfo = projects.getProjectData(e.target.dataset.id);
-    const detailHTML = getDetailHTML(projectInfo);
-    const worksContainer = document.querySelector('body');
-    const detailSection = document.createElement('div');
-    detailSection.classList.add('popup');
-    detailSection.style.position = 'absolute';
-    detailSection.style.top = `${window.scrollY}px`;
-    detailSection.innerHTML = detailHTML;
-    worksContainer.appendChild(detailSection);
+    const dialog = getModalDialog(projectInfo);
+    dialog.showModal();
     makeNotScrollable();
     const closeButton = document.querySelector('.detail-container button');
-    closeButton.addEventListener('click', () => {
-      const pop = document.querySelector('.popup');
-      const worksContainer = document.querySelector('body');
-      worksContainer.removeChild(pop);
-      makeScrollable();
-    });
+    closeButton.addEventListener('click', closeDialogHandler);
   }
 });
 const btnSkillsHandler = (e) => {

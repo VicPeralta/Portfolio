@@ -355,6 +355,12 @@ body {
   margin-bottom: 20px;
 }
 
+#dialog {
+  width: 90%;
+  background-color: lightgray;
+  border: none;
+}
+
 .detail-container {
   width: 95%;
   height: auto;
